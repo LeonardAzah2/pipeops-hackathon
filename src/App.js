@@ -6,7 +6,7 @@ function App() {
       <header className="App-header">
      
         <p className='text-red-500'>
-          Health is wealth.
+          Health is wealth!!!.
         </p>
       
       </header>
