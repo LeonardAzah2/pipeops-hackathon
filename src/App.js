@@ -1,17 +1,18 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import CreateAccount from './components/CreateAccount';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-     
-        <p className='text-red-500'>
-          Health is wealth.
-        </p>
-      
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<CreateAccount />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/create-account" element={<CreateAccount />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
